@@ -1,0 +1,53 @@
+----------------------
+| LBK20000 (8 bytes) |
+|--------------------|
+| 4byte Package ID   |
+|--------------------|
+| 128 byte buffer    |
+| containing NUL     |
+| terminated string  |
+| (blank in example) |
+|--------------------|
+| 128 byte buffer    |
+| containing NUL     |
+| terminated string  |
+| (copyright string  |
+| in example file)   |
+
+
+
+
+Chunk Header
+
+-----------------------
+| 4 Byte Header       |
+| EF BE AD BA         |
+|---------------------|
+| 4 byte start address|
+|---------------------|
+| 4 bytes size of     |
+| chunk               |
+|---------------------|
+| 4 bytes stored size |
+|---------------------|
+| 28 bytes code       |
+|(ignored by lbkutils)|
+|---------------------|
+| stored_size         |
+| multiple of 4       |
+|---------------------|
+
+
+Chunk Layout
+
+-----------------------
+| header 48 bytes     |
+|---------------------|
+| chunk data,         |
+| len = stored size   |
+| member of header    |
+|---------------------|
+| padding so total    |
+| chunk len is        |
+| multiple of 4 bytes |
+-----------------------``

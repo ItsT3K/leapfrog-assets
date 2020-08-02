@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+$Header: $ 
+
+If you edit this file, remember to run leapResultsGenerator\genLeapResults.cmd
+to regenerate \Interface\LeapResults.h
+
+Note that only the first 33 letters of title are displayed.
+-->
+<configuration version="0.2">
+	<nvPair><errors-base-url>http://www.leapfrog.com/help/hprn_popup.jhtml?errorcode=%value%&amp;os=%osname%&amp;msvers=%msversion%&amp;linkId=%linkerid%&amp;installFlag=0</errors-base-url></nvPair>
+	<error>
+		<value>0</value>
+		<id>BASE_RESULT_OK</id>
+		<title>Everything is OK</title>
+		<internal-desc>Reserved OK Value</internal-desc>
+		<desc>Everyting is OK</desc>
+		<displayFlag>0</displayFlag>
+	</error>
+	<!-- Base Error Set.
+	These are used by the <use-text-from> field, to reduce unique copy, while tracking the error through 
+	-->
+	<error>
+		<value>1</value><id>BASE_ERROR_ERASE_FAILURE_2002USB</id>
+		<title>Cartridge formatting problem: Error </title>
+		<internal-desc>Failure during erase operation - Possibly bad cart</internal-desc>
+		<desc>1. Check that your Mind Station has power, is connected to the computer, and that the cartridge is firmly inserted, and the green light is on.
+2. Click the 'RETRY' button.</desc>
+	</error>
+	<error>
+		<value>2</value><id>BASE_ERROR_ERASE_FAILURE_2002COMM</id>
+		<title>Cartridge formatting problem: Error</title>
+		<internal-desc>Failure during erase operation - Possibly bad cart</internal-desc>
+		<desc>1. Check that your Mind Station has power, is connected to the computer, and that the cartridge is firmly inserted, and the green light is on.
+2. Click the 'RETRY' button.</desc>
+	</error>
+	<error>
+		<value>3</value><id>BASE_ERROR_ERASE_FAILURE_2001</id>
+		<title>Cartridge formatting problem: Error</title>
+		<internal-desc>Failure during erase operation - Possibly bad cart</internal-desc>
+		<desc>1. Check that your Mind Station has power, is connected to the computer, and that the cartridge is firmly inserted, and the green light is on.
+2. If you are using batteries, try replacing them.
+3. Click the 'RETRY' button.</desc>
+	</error>
+	<error>
+		<value>4</value><id>BASE_ERROR_INET_CONNECT_DROPPED</id>
+		<title>Internet connection problem: Error</title>
+		<internal-desc>Lost connection to internet</internal-desc>
+		<desc>1. Please connect to the internet.  
+2. If you are experiencing problems connecting, please contact your internet service provider.
+3. Click the 'RETRY' button.</desc>
+	</error>
+	<error>
+		<value>5</value>
+		<id>BASE_ERROR_CART_NO_ID_2002USB</id>
+		<title>Cartridge cannot be identified: Error</title>
+		<internal-desc>Unable to identify the current flash. - possibly old lcf or bad flash.</internal-desc>
+		<desc>1. Check that your Mind Station has power, is connected to the computer, the cartridge is firmly inserted, and the green light is on.
+2. Click the 'RETRY' button.</desc>
+	</error>
+	<error>
+		<value>6</value><id>BASE_ERROR_CART_NO_ID_2002COMM</id>
+		<title>Cartridge cannot be identified: Error</title>
+		<internal-desc>Unable to identify the current flash. - possibly old lcf or bad flash.</internal-desc>
+		<desc>1. Check that your Mind Station has power, is connected to the computer, the cartridge is firmly inserted, and the green light is on.
+2. Click the 'RETRY' button.</desc>
+	</error>
+	<error>
+		<value>7</value><id>BASE_ERROR_CART_NO_ID_2001</id>
+		<title>Cartridge cannot be identified: Error</title>
+		<internal-desc>Unable to identify the current flash. - possibly old lcf or bad flash.</internal-desc>
+		<desc>1. Check that your Mind Station has power, is connected to the computer, the cartridge is firmly inserted, and the green light is on.
+2. If you are using batteries, try replacing them.
+3. Click the 'RETRY' button.</desc>
+	</error>
+	<error>
+		<value>8</value><id>BASE_ERROR_SW_CORRUPT</id>
+		<title>Mind Station software problem: Error</title>
+		<internal-desc>Files not found, files not parsable, files access wrong</internal-desc>
+		<desc>1. Please reinstall using the installation CD provided.</desc>
+	</error>
+	<error>
+		<value>9</value><id>BASE_ERROR_NO_FIRST_LINK</id>
+		<title>Computer communication problem: Error</title>
+		<internal-desc>Unable to find any linker, or unable to find comnmand line requested linker. Can be no cart in 2001</internal-desc>
+		<desc>1. Check that your Mind Station has power, is connected to the computer, and that the cartridge is firmly inserted, and the green light is on.
+2. Check that the COM port that your Mind Station is connected to is not in use by another program.
+3. Click the 'RETRY' button.
+</desc>
+	</error>
+	<error>
+		<value>10</value><id>BASE_ERROR_NO_FIRST_INET_CONNECT</id>
+		<title>No internet connection detected: Error</title>
+		<internal-desc>Unable to initially connect to internet</internal-desc>
+		<desc>1. Please connect to the internet.  
+2. If you are experiencing problems connecting, please contact your internet service provider.  
+3. For AOL users with children accounts, please log in to AOL as a regular account since downloads are restricted for Children Accounts.
+4. Click the 'RETRY' button.</desc>
+	</error>
+	<error>
+		<value>11</value><id>BASE_ERROR_NO_FIRST_ACP_CONNECT</id>
+		<title>No website connection available: Error</title>
+		<internal-desc>Unable to initiate ACP connection</internal-desc>
+		<desc>1. First check your internet connection. 
+2. If you are experiencing problems contact your internet service provider. 
+3. Click the 'RETRY' button.
+</desc>
+	</error>
+	<error>
+		<value>12</value><id>BASE_ERROR_LOW_POWER</id>
+		<title>Mind Station low power: Error</title>
+		<internal-desc>2002 Linker Object reports low power condition.</internal-desc>
+		<desc>1. For the most reliable power, please use the AC adapter and make sure it is firmly plugged in.  You will know there's power if you see an indicator light illuminated on the Mind Station.
+2. Click the 'RETRY' button.</desc>
+	</error>
+	<error>
+		<value>13</value><id>BASE_ERROR_NO_CART_PRESENT</id>
+		<title>No cartridge found: Error</title>
+		<internal-desc>2002 Linker Object reports no cart present.</internal-desc>
+		<desc>1. Check that your Mind Station has power, is connected to the computer, and that the cartridge is firmly inserted, and the green light is on.
+2. Click the 'RETRY' button.</desc>
+	</error>
+	<error>
+		<value>14</value><id>BASE_ERROR_CART_REMOVED</id>
+		<title>Cartridge removed early: Error</title>
+		<internal-desc>2002 Linker Object reports that the Cart has been removed ( check after write fail )</internal-desc>
+		<desc>1. Reinsert your cartridge. Your Mind Station progress bar that appears while downloading will tell you when it's okay to remove your cartridge.  
+2. Click the 'RETRY' button.</desc>
+	</error>
+	<error>
+		<value>15</value><id>BASE_ERROR_LOST_LINK_2001</id>
+		<title>Mind Station connection was lost: Error</title>
+		<internal-desc>2001 Linker Object reports that comunications have been lost to the Linker</internal-desc>
+		<desc>1. Check that your Mind Station has power, is connected to the computer, the cartridge is firmly inserted, and the green light is on.
+2. If you are using batteries, try replacing them.
+3. Click the 'RETRY' button.</desc>
+	</error>
+	<error>
+		<value>16</value><id>BASE_ERROR_LOST_LINK_2002USB</id>
+		<title>Mind Station connection was lost: Error</title>
+		<internal-desc>2002USB Linker Object  reports that comunications have been lost to the Linker</internal-desc>
+		<desc>1. Check that your Mind Station has power, is connected to the computer, the cartridge is firmly inserted, and the green light is on.
+2. Click the 'RETRY' button.</desc>
+	</error>
+	<error>
+		<value>17</value><id>BASE_ERROR_LOST_LINK_2002COMM</id>
+		<title>Mind Station connection was lost: Error</title>
+		<internal-desc>2002COMM Linker Object  reports that comunications have been lost to the Linker</internal-desc>
+		<desc>1. Check that your Mind Station has power, is connected to the computer, and that the cartridge is firmly inserted, and the green light is on.
+2. Click the 'RETRY' button.</desc>
+	</error>
+	<error>
+		<value>18</value><id>BASE_ERROR_DOWNLOAD_TOO_BIG</id>
+		<title>Cartridge too small for download: Error</title>
+		<internal-desc>ACP has asked to write data to an invalid flash address.</internal-desc>
+		<desc>The inserted cartridge is too small for the download selected.
+1. Please insert a larger cartridge or change your activity pack selection.
+2. Click the 'RETRY' button.</desc>
+	</error>
+	<error>
+		<value>19</value><id>BASE_ERROR_FLASH_VERIFY_BAD</id>
+		<title>Cartridge write problem: Error</title>
+	<internal-desc>Flash does not compare to original data correctly.</internal-desc>
+	<desc>1. Check that your Mind Station has power, is connected to the computer, and that the cartridge is firmly inserted, and the green light is on.
+2. Click the 'RETRY' button.</desc>
+	</error>
+	<error>
+		<value>20</value><id>BASE_ERROR_CART_READ_FAIL</id>
+		<title>Cartridge cannot be read: Error</title>
+	<internal-desc>Cart can not be read</internal-desc>
+	<desc>1. Check that your Mind Station has power, is connected to the computer, and that the cartridge is firmly inserted, and the green light is on.
+2. Click the 'RETRY' button.</desc>
+	</error>
+	<error>
+		<value>21</value><id>BASE_ERROR_LFS_CORRUPT</id>
+		<title>Mind Station software problem: Error</title>
+		<internal-desc>Download problem, corrupt lfs file</internal-desc>
+		<desc>1. Please click the 'CANCEL' button and return to download starting at your page on MyLeapfrog.  
+2. If problem persists please reinstall your Mind Station software. 
+</desc>
+	</error>
+	<error>
+		<value>22</value><id>BASE_ERROR_LBK_CORRUPT</id>
+		<title>Mind Station software problem: Error</title>
+		<internal-desc>LBK is corrupt, developers only - until we do cacheing</internal-desc>
+		<desc>1. If problem persists please reinstall your Mind Station software. 
+2. Click the 'RETRY' button.</desc>
+	</error>
+	<error>
+		<value>23</value><id>BASE_ERROR_FAILED_CART</id>
+		<title>Cartridge failed: Error</title>
+		<internal-desc>Cartridge has failed testing, suggest replacement</internal-desc>
+		<desc>1. If problem persists please reinstall your Mind Station software. 
+2. Click the 'RETRY' button.</desc>
+	</error>
+	<error>
+		<value>24</value><id>BASE_ERROR_NO_LFS</id>
+		<title>Failed initialization: Error</title>
+		<internal-desc>Run from command line without secret handshake</internal-desc>
+		<desc>1. This program needs to be started by selecting either upload or download from your MyLeapfrog page.			
+2. If problem persists please reinstall your Mind Station software. 
+3. Please click the 'CANCEL' button and return to download starting at your page on MyLeapfrog.</desc>
+	</error>
+	<error>
+		<value>25</value><id>BASE_ERROR_NO_LBK</id>
+		<title>Failed to use data file: Error</title>
+		<internal-desc>Developer use without specifying lbk name</internal-desc>
+		<desc>1. If problem persists please reinstall your Mind Station software. 
+2. Click the 'RETRY' button.</desc>
+	</error>
+	<error>
+		<value>26</value><id>BASE_ERROR_GENERAL</id>
+		<title>Internal Error: Error</title>
+	<internal-desc>Catch all for development, not appropriate for product</internal-desc>
+	<desc>This is an internal Mind Station Error, Please make sure you have the most recent software by clicking below</desc>
+	</error>
+
+	<!--
+	Detailed result codes, refering to base error text
+	-->
+
+	<!--
+		100-200 are general / engine error codes
+	-->
+
+	<error>
+		<value>110</value>
+		<id>iLARESULT_OK</id>
+	 	<internal-desc>Reserved OK Value</internal-desc>
+		<use-text-from>BASE_RESULT_OK</use-text-from>
+	</error>
+
+	<error>
+		<value>111</value><id>iLARESULT_BAD_LBKFILE1</id>
+		<use-text-from>BASE_ERROR_LBK_CORRUPT</use-text-from>
+	</error>
+	<error>
+		<value>112</value><id>iLARESULT_BAD_LBKFILE2</id>
+		<use-text-from>BASE_ERROR_LBK_CORRUPT</use-text-from>
+	</error>
+	<error>
+		<value>113</value><id>iLARESULT_BAD_LBKFILE3</id>
+		<use-text-from>BASE_ERROR_LBK_CORRUPT</use-text-from>
+	</error>
+	<error>
+		<value>114</value><id>iLARESULT_BAD_LBKFILE4</id>
+		<use-text-from>BASE_ERROR_LBK_CORRUPT</use-text-from>
+	</error>
+	<error>
+		<value>115</value><id>iLARESULT_BAD_LBKFILE5</id>
+		<use-text-from>BASE_ERROR_LBK_CORRUPT</use-text-from>
+	</error>
+	<error>
+		<value>116</value><id>iLARESULT_BAD_LBKFILE6</id>
+		<use-text-from>BASE_ERROR_LBK_CORRUPT</use-text-from>
+	</error>
+	<error>
+		<value>117</value><id>iLARESULT_BAD_LBKFILE7</id>
+		<use-text-from>BASE_ERROR_LBK_CORRUPT</use-text-from>
+	</error>
+	<error>
+		<value>118</value><id>iLARESULT_BAD_LBKFILE8</id>
+		<use-text-from>BASE_ERROR_LBK_CORRUPT</use-text-from>
+	</error>
+	<error>
+		<value>119</value><id>iLARESULT_BAD_LBKFILE9</id>
+		<use-text-from>BASE_ERROR_LBK_CORRUPT</use-text-from>
+	</error>
+	<error>
+		<value>120</value><id>iLARESULT_BAD_LFSFILE1</id>
+		<use-text-from>BASE_ERROR_LFS_CORRUPT</use-text-from>
+	</error>
+	<error>
+		<value>121</value><id>iLARESULT_BAD_LFSFILE2</id>
+		<use-text-from>BASE_ERROR_LFS_CORRUPT</use-text-from>
+	</error>
+	<error>
+		<value>122</value><id>iLARESULT_BAD_LCFFILE1</id>
+		<use-text-from>BASE_ERROR_SW_CORRUPT</use-text-from>
+	</error>
+	<error>
+		<value>123</value><id>iLARESULT_BAD_LCFFILE2</id>
+		<use-text-from>BASE_ERROR_SW_CORRUPT</use-text-from>
+	</error>
+	<error>
+		<value>124</value><id>iLARESULT_BAD_LCFFILE3</id>
+		<use-text-from>BASE_ERROR_SW_CORRUPT</use-text-from>
+	</error>
+	<error>
+		<value>125</value><id>iLARESULT_BAD_LCFFILE4</id>
+		<use-text-from>BASE_ERROR_SW_CORRUPT</use-text-from>
+	</error>
+	<error>
+		<value>126</value><id>iLARESULT_BAD_LCFFILE5</id>
+		<use-text-from>BASE_ERROR_SW_CORRUPT</use-text-from>
+	</error>
+	<error>
+	 	<value>127</value>
+	 	<id>iLARESULT_BADFILE</id>
+		<internal-desc>Config File is Broken</internal-desc>
+		<use-text-from>BASE_ERROR_SW_CORRUPT</use-text-from>
+	</error>
+	<error>
+	 	<value>128</value>
+	 	<id>iLARESULT_ERROR</id>
+	 	<internal-desc>Shorthand Catch All, should not be used in final release</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+	<error>
+	 	<value>129</value>
+	 	<id>iLARESULT_NOTAVAIL</id>
+	 	<internal-desc>General Return Code supporting different functionality linkers
+		This is an internal error if it is found in an error screen</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+	<error>
+	 	<value>130</value>
+	 	<id>iLARESULT_NOTDEF</id>
+	 	<internal-desc>Error Not Defined</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+	<error>
+	 	<value>131</value>
+	 	<id>iLARESULT_BADCART1</id>
+	 	<internal-desc>Cartridge Failure</internal-desc>
+		<use-text-from>BASE_ERROR_FAILED_CART</use-text-from>
+	</error>
+		<error>
+	 	<value>132</value>
+	 	<id>iLARESULT_BAD_CONFIG_VALUE_NAME</id>
+	 	<internal-desc>Configuration value specified does not exist</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+	<error>
+	 	<value>133</value>
+	 	<id>iLARESULT_BAD_CART_ADDRESS</id>
+		<internal-desc>The size of the cart is not large enough to contain the value</internal-desc>
+		<use-text-from>BASE_ERROR_DOWNLOAD_TOO_BIG</use-text-from>
+	</error>			
+	<error>
+	 	<value>134</value>
+	 	<id>iLARESULT_NO_ACP_CONNECTION</id>
+	 	<internal-desc>Unable to connect to the ACP server</internal-desc>
+		<use-text-from>BASE_ERROR_NO_FIRST_ACP_CONNECT</use-text-from>
+	</error>			
+	<error>
+	 	<value>135</value>
+	 	<id>iLARESULT_NO_MS_CONNECTION</id>
+	 	<internal-desc>Mind Station connection lost</internal-desc>
+		<use-text-from>BASE_ERROR_NO_FIRST_LINK</use-text-from>
+	</error>			
+	<error>
+	 	<value>136</value>
+	 	<id>iLARESULT_MISSING_LFS</id>
+	 	<internal-desc>Cannot open LFS file - No LFS file specified on the command line.</internal-desc>
+		<use-text-from>BASE_ERROR_NO_LFS</use-text-from>
+	</error>			
+	<error>
+	 	<value>137</value>
+	 	<id>iLARESULT_NO_LBKFILE2</id>
+		<internal-desc>Cannot open LBK file - Developer's use error.</internal-desc>
+		<use-text-from>BASE_ERROR_NO_LBK</use-text-from>
+	</error>			
+	<error>
+		<value>138</value>
+	 	<id>iLARESULT_NO_LBKFILE3</id>
+	 	<internal-desc>Cannot open LBK file - Developer's use error.</internal-desc>
+		<use-text-from>BASE_ERROR_NO_LBK</use-text-from>
+	</error>
+    <error>
+	 	<value>139</value>
+	 	<id>iLARESULT_INTERNALERR1</id>
+	 	<internal-desc>Unexpected SW Situation</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+    <error>
+	 	<value>140</value>
+	 	<id>iLARESULT_INTERNALERR2</id>
+	 	<internal-desc>Unexpected SW Situation</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+    <error>
+	 	<value>141</value>
+	 	<id>iLARESULT_INTERNALERR3</id>
+	 	<internal-desc>Unexpected SW Situation</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+    <error>
+	 	<value>142</value>
+	 	<id>iLARESULT_INTERNALERR4</id>
+	 	<internal-desc>Unexpected SW Situation</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+    <error>
+	 	<value>143</value>
+	 	<id>iLARESULT_INTERNALERR1_DIAG</id>
+	 	<internal-desc>Unexpected SW Situation - Diagnostics could not create linker thread</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+    <error>
+	 	<value>144</value>
+	 	<id>iLARESULT_INTERNALERR2_DIAG</id>
+	 	<internal-desc>Unexpected SW Situation - Diagnostics had unexpected Chip Select</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+    <error>
+	 	<value>145</value>
+	 	<id>iLARESULT_INTERNALERR1_ACP</id>
+	 	<internal-desc>Unexpected ACP title in UI command</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+	<error>
+	 	<value>146</value>
+	 	<id>iLARESULT_INTERNALERR1_FLASH</id>
+	 	<internal-desc>Unexpected SW Situation - Address being mapped to Chip Select Fails</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+	<error>
+		<value>147</value><id>iLARESULT_BAD_LBKFILE10</id>
+		<use-text-from>BASE_ERROR_LBK_CORRUPT</use-text-from>
+	</error>
+	<error>
+	 	<value>148</value>
+	 	<id>iLARESULT_BADCART2</id>
+	 	<internal-desc>Cartridge Failure</internal-desc>
+		<use-text-from>BASE_ERROR_FAILED_CART</use-text-from>
+	</error>
+	<error>
+	 	<value>149</value>
+	 	<id>iLARESULT_BADCART3</id>
+	 	<internal-desc>Cartridge Failure</internal-desc>
+		<use-text-from>BASE_ERROR_FAILED_CART</use-text-from>
+	</error>
+	<error>
+	 	<value>150</value>
+	 	<id>iLARESULT_BADCART4</id>
+	 	<internal-desc>Cartridge Failure</internal-desc>
+		<use-text-from>BASE_ERROR_FAILED_CART</use-text-from>
+	</error>
+	<error>
+	 	<value>151</value>
+	 	<id>iLARESULT_BADCART5</id>
+	 	<internal-desc>Cartridge Failure</internal-desc>
+		<use-text-from>BASE_ERROR_FAILED_CART</use-text-from>
+	</error>
+	<error>
+	 	<value>152</value>
+	 	<id>iLARESULT_BADCART6</id>
+	 	<internal-desc>Cartridge Failure</internal-desc>
+		<use-text-from>BASE_ERROR_FAILED_CART</use-text-from>
+	</error>
+	<error>
+	 	<value>153</value>
+	 	<id>iLARESULT_BADCART7</id>
+	 	<internal-desc>Cartridge Failure</internal-desc>
+		<use-text-from>BASE_ERROR_FAILED_CART</use-text-from>
+	</error>
+	<error>
+		<value>154</value>
+	 	<id>iLARESULT_BADCART8</id>
+	 	<internal-desc>Cartridge Failure</internal-desc>
+		<use-text-from>BASE_ERROR_FAILED_CART</use-text-from>
+	</error>
+	<error>
+	 	<value>155</value>
+	 	<id>iLARESULT_BADCART9</id>
+	 	<internal-desc>Cartridge Failure</internal-desc>
+		<use-text-from>BASE_ERROR_FAILED_CART</use-text-from>
+	</error>
+	<error>
+		<value>156</value>
+	 	<id>iLARESULT_BADCART10</id>
+	 	<internal-desc>Cartridge Failure</internal-desc>
+		<use-text-from>BASE_ERROR_FAILED_CART</use-text-from>
+	</error>
+	<error>
+		<value>157</value>
+	 	<id>iLARESULT_BADCART11</id>
+	 	<internal-desc>Cartridge Failure</internal-desc>
+		<use-text-from>BASE_ERROR_FAILED_CART</use-text-from>
+	</error>
+	<error>
+		<value>158</value>
+	 	<id>iLARESULT_INSUFFICIENT_BUFFER</id>
+	 	<internal-desc>getValue from config file doesn't have room</internal-desc>
+		<use-text-from>BASE_ERROR_SW_CORRUPT</use-text-from>
+	</error>
+	<error>
+		<value>159</value>
+	 	<id>iLARESULT_BADCART</id>
+	 	<internal-desc>Cartridge Failure</internal-desc>
+		<use-text-from>BASE_ERROR_FAILED_CART</use-text-from>
+	</error>
+
+
+	<!--
+		200-299 are linker error codes
+	-->
+	<error>
+		<value>211</value>
+		<id>iLARESULT_BADPORT_2001GL</id>
+		<use-text-from>iLARESULT_BADPORT</use-text-from>
+	</error>
+	<error>
+		<value>212</value>
+		<id>iLARESULT_BADPORT_2002COMM</id>
+		<use-text-from>iLARESULT_BADPORT</use-text-from>
+	</error>
+	<error>
+		<value>213</value>
+		<id>iLARESULT_BADPORT</id>
+		<title>Bad Port Speciifed: Error</title>
+		<internal-desc>The Application could not open a supplied comm port, comm ports are only used for hints so someone has installed something that has this port open after we sucessfully used it.
+This is not a real error, to be surfaced to the user but noteworthy nonetheless.
+		</internal-desc>
+		<desc>Problem reusing old connection: 
+This is an internal condition, specifiying that the specified comm port was not openable, this should only be an issue if we are looking using the hint, and other software are now using the comm port.</desc>
+	</error>
+	<error>
+	 	<value>214</value>
+	 	<id>iLARESULT_NAK</id>
+		<internal-desc>Internal 2001 serial error - Communications Negative Acknowledge</internal-desc>
+		<use-text-from>BASE_ERROR_LOST_LINK_2001</use-text-from>
+	</error>
+	<error>
+	 	<value>215</value>
+	 	<id>iLARESULT_TIMEOUT</id>
+	 	<internal-desc>Communications Failure</internal-desc>
+		<use-text-from>BASE_ERROR_LOST_LINK_2001</use-text-from>
+	</error>
+		<error>
+		<value>216</value><id>iLARESULT_NOID_2002COMM</id>
+	 	<internal-desc>Failed to ID cartridge, but Serial 2002 linker ok</internal-desc>
+		<use-text-from>BASE_ERROR_CART_NO_ID_2002COMM</use-text-from>
+	</error>
+	<error>
+		<value>217</value><id>iLARESULT_NOID_2002USB</id>
+	 	<internal-desc>Failed to ID cartridge, but USB linker ok</internal-desc>
+		<use-text-from>BASE_ERROR_CART_NO_ID_2002USB</use-text-from>
+	</error>
+	<error>
+		<value>218</value><id>iLARESULT_NOID_2001GL</id>
+	 	<internal-desc>Failed to ID cartridge, but Serial 2001 linker ok</internal-desc>
+		<use-text-from>BASE_ERROR_CART_NO_ID_2001</use-text-from>
+	</error>
+
+	<error>
+	 	<value>219</value>
+	 	<id>iLARESULT_INTERNALERR1_2001</id>
+	 	<internal-desc>Unexpected SW Situation</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+    <error>
+	 	<value>220</value>
+	 	<id>iLARESULT_BADLINKER</id>
+	 	<internal-desc>Linker Failure</internal-desc>
+		<use-text-from>BASE_ERROR_NO_FIRST_LINK</use-text-from>
+	</error>
+	<error>
+	 	<value>221</value>
+	 	<id>iLARESULT_NOID</id>
+	 	<internal-desc>Failed to ID cartridge</internal-desc>
+		<use-text-from>BASE_ERROR_CART_NO_ID_2001</use-text-from>
+	</error>
+	<error>
+	 	<value>222</value>
+	 	<id>iLARESULT_MISSINGFILE</id>
+	 	<internal-desc>Failed to find file</internal-desc>
+		<use-text-from>BASE_ERROR_SW_CORRUPT</use-text-from>
+	</error>
+	<error>
+	 	<value>223</value>
+	 	<id>iLARESULT_BADCONTROL</id>
+		<internal-desc>Failed to control 2001 serial port properly</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+	<error>
+	 	<value>224</value>
+	 	<id>iLARESULT_BADOPEN</id>
+		<internal-desc>Failed to open comm, port, this is only a failure when linker is specified on command line</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+	<error>
+		<value>225</value>
+	 	<id>iLARESULT_TIMEOUT_GLTHREAD_2001</id>
+	 	<internal-desc>Timeout on wait for single object in engine thread creating greenleaf object</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+	<error>
+		<value>226</value>
+	 	<id>iLARESULT_BADCOMM1_2001</id>
+	 	<internal-desc>Internal Greenleaf error trying to control the baud rate</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+	<error>
+		<value>227</value>
+	 	<id>iLARESULT_BADCOMM2_2001</id>
+	 	<internal-desc>Internal Greenleaf error trying to control the flow control</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+	<error>
+		<value>228</value>
+	 	<id>iLARESULT_BADCOMM3_2001</id>
+	 	<internal-desc>Internal Greenleaf error trying to send a command</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+	<error>
+		<value>229</value>
+	 	<id>iLARESULT_COMMTIMEOUT1_2001</id>
+	 	<internal-desc>Timeout waiting for response to command</internal-desc>
+		<use-text-from>BASE_ERROR_LOST_LINK_2001</use-text-from>
+	</error>
+	<error>
+		<value>230</value>
+	 	<id>iLARESULT_COMMTIMEOUT2_2001</id>
+	 	<internal-desc>Timeout waiting for response to command</internal-desc>
+		<use-text-from>BASE_ERROR_LOST_LINK_2001</use-text-from>
+	</error>
+	<error>
+		<value>231</value>
+	 	<id>iLARESULT_COMMTIMEOUT3_2001</id>
+	 	<internal-desc>Timeout waiting for response to command</internal-desc>
+		<use-text-from>BASE_ERROR_LOST_LINK_2001</use-text-from>
+	</error>
+	<error>
+		<value>232</value>
+	 	<id>iLARESULT_COMMERROR1_2001</id>
+	 	<internal-desc>Timeout waiting for response to command</internal-desc>
+		<use-text-from>BASE_ERROR_LOST_LINK_2001</use-text-from>
+	</error>
+	<error>
+		<value>233</value>
+	 	<id>iLARESULT_COMMERROR2_2001</id>
+	 	<internal-desc>Timeout waiting for response to command</internal-desc>
+		<use-text-from>BASE_ERROR_LOST_LINK_2001</use-text-from>
+	</error>
+    <error>
+	 	<value>234</value>
+	 	<id>iLARESULT_INTERNALERR2_2001</id>
+	 	<internal-desc>Unexpected SW Situation</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+    <error>
+	 	<value>235</value>
+	 	<id>iLARESULT_INTERNALERR3_2001</id>
+	 	<internal-desc>Unexpected SW Situation</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+    <error>
+	 	<value>236</value>
+	 	<id>iLARESULT_INTERNALERR4_2001</id>
+	 	<internal-desc>Unexpected SW Situation</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>
+	<error>
+		<value>237</value>
+	 	<id>iLARESULT_COMMERROR3_2001</id>
+	 	<internal-desc>Timeout waiting for response to command</internal-desc>
+		<use-text-from>BASE_ERROR_LOST_LINK_2001</use-text-from>
+	</error>
+	<error>
+		<value>238</value>
+	 	<id>iLARESULT_COMMERROR4_2001</id>
+	 	<internal-desc>Timeout waiting for response to command</internal-desc>
+		<use-text-from>BASE_ERROR_LOST_LINK_2001</use-text-from>
+	</error>
+	<error>
+		<value>239</value>
+	 	<id>iLARESULT_COMMTIMEOUT4_2001</id>
+	 	<internal-desc>Timeout waiting for response to command</internal-desc>
+		<use-text-from>BASE_ERROR_LOST_LINK_2001</use-text-from>
+	</error>
+	<error>
+		<value>240</value><id>iLARESULT_SHUTTINGDOWN</id>
+		<title>Application shutdown in progress: Error</title>
+		<internal-desc>Internally used to signal shutdown conditions</internal-desc>
+		<desc></desc>
+	</error>
+	<error>
+		<value>241</value><id>iLARESULT_NOT_CACHED</id>
+		<title>Cache was asked for a chunk that isn't cached.</title>
+		<internal-desc>Download cache was asked for a chunk that isn't in the cache.</internal-desc>
+		<use-text-from>BASE_ERROR_GENERAL</use-text-from>
+	</error>		
+</configuration>

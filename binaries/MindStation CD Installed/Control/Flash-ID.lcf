@@ -1,0 +1,80 @@
+1
+# Updated with linker enable field
+# 0 = none, 1 = 2001, 2 = 2002, 3 = all
+# Do NOT change the line above unless you are actually REALLY knowing what you are doing!
+#
+# This file is responsible for telling the mindstation(s) how to determine which type
+# of flash we are currently connected to.
+#
+# Structure:
+# Each entry consists of two lines. The first line describes where to find the answer 
+# to the GET ID command, and the second line is the GET-ID command itself
+#
+# 1. line
+# ADDR   Manuf.C.   ADDR   Device-ID   Int.device-number   LinkerEnable   Description
+# long    byte      long    byte          long               long            char[80]
+#2. line
+# NumOfTuples  ADDR DATA ADDR DATA ADDR DATA ... (Max 6)
+#  byte        long byte long byte long byte ...
+#
+# [1]
+0 1 2 c4 1 3 "AMD 29LV160 T"
+3 AAA AA 555 55 AAA 90
+#
+# [2]
+0 1 2 49 2 3 "AMD 29LV160 B"
+3 AAA AA 555 55 AAA 90
+#
+# [3]
+0 BF 1 D9 3 3 "SST 39VF016"
+3 5555 AA 2AAA 55 5555 90
+#
+# [4]
+0 BF 1 D7 4 3 "SST 39VF040"
+3 5555 AA 2AAA 55 5555 90
+#
+# [5]
+0 89 1 D0 5 3 "INTEL 28F016B3 T"
+1 555 90
+#
+# [6]
+0 89 1 D1 6 3 "INTEL 28F016B3 B"
+1 555 90
+#
+# [7]
+0 B0 2 E9 7 1 "SHARP 28F160BJE B"
+1 555 90
+#
+# [8]
+0 B0 2 E3 8 1 "SHARP 28F320BJE B"
+1 555 90 
+#
+# [9]
+0 89 2 16 9 3 "INTEL 28F320J3A"
+1 555 90
+#
+# [10]
+0 98 2 9A 10 3 "TOSHIBA 58FVT321"
+3 AAA AA 555 55 AAA 90
+#
+# [11]
+0 C2 2 c4 11 3 "MACRONIX"
+3 AAA AA 555 55 AAA 90
+#
+# [12]
+0 1F 2 c2 12 3 "ATMEL 49BV161T"
+3 AAA AA 555 55 AAA 90
+#
+# [13]
+0 1F 2 c9 13 3 "ATMEL 49BV321T"
+3 AAA AA 555 55 AAA 90
+#
+# [14]
+0 98 2 c2 14 3 "TOSHIBA 58FVT160"
+3 AAA AA 555 55 AAA 90
+#
+# [15]
+0 98 2 9C 15 3 "TOSHIBA 58FVB321"
+3 AAA AA 555 55 AAA 90
+#
+# eof - flash ids

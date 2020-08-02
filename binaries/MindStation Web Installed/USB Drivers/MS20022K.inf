@@ -1,0 +1,73 @@
+; Installation inf for the LeapFrog's MS2002 USB driver
+; Copyright (c) 2000 - 2002 LeapFrog Enterprises, Inc. All rights reserved.
+; Internet Group v3.2.6 - Copenhagen - 7/12/02
+; Commented out LeapPort for release - Copenhagen - 7/26/02 
+;
+
+[Version]
+Signature="$Windows NT$"
+Class=USB
+ClassGuid={36fc9e60-c465-11cf-8056-444553540000}
+provider=%LF%
+DriverVer=07/26/2002,3.2.6.6
+LayoutFile=layout.inf
+CatalogFile=MS2002.cat
+
+[Manufacturer]
+%MfgName%=LeapFrog
+
+[LeapFrog]
+%USB\VID_630F&PID_0001.DeviceDesc%=DockingGroup.Dev, USB\VID_630F&PID_0001
+;%USB\VID_630F&PID_0002.DeviceDesc%=DockingGroup.Dev, USB\VID_630F&PID_0002
+%USB\VID_0F63&PID_0100.DeviceDesc%=DockingGroup.Dev, USB\VID_0F63&PID_0100
+;%USB\VID_0F63&PID_0200.DeviceDesc%=DockingGroup.Dev, USB\VID_0F63&PID_0200
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[SourceDisksNames]
+0=%SourceDesc%
+
+[SourceDisksFiles]
+MS20022K.sys=0 
+
+[DestinationDirs]
+DefaultDestDir = 10,System32\Drivers
+DockingGroup.Files.Ext = 10,System32\Drivers
+
+[DockingGroup.Dev]
+CopyFiles=DockingGroup.Files.Ext
+AddReg=DockingGroup.AddReg
+
+[DockingGroup.Dev.NT]
+CopyFiles=DockingGroup.Files.Ext
+AddReg=DockingGroup.AddReg
+
+[DockingGroup.Dev.NT.Services]
+Addservice = DockingGroup, 0x00000002, DockingGroup.AddService
+
+[DockingGroup.AddService]
+DisplayName    = %DockingGroup.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\MS20022K.sys		; path to where we installed the driver in DestinationDirs
+LoadOrderGroup = Base		    ; Supposed to point to a load order group
+
+[DockingGroup.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,MS20022K.sys
+
+[DockingGroup.Files.Ext]
+MS20022K.sys
+
+;----------------------------------------------------------------------------
+[Strings]
+LF="LeapFrog Enterprises, Inc."
+MfgName="LeapFrog"
+USB\VID_630F&PID_0001.DeviceDesc="Mind Station"
+;USB\VID_630F&PID_0002.DeviceDesc="LeapPort"
+USB\VID_0F63&PID_0100.DeviceDesc="Mind Station 2002"
+;USB\VID_0F63&PID_0200.DeviceDesc="LeapPort"
+DockingGroup.SvcDesc="LeapFrog WDM USB Device Driver"
+SourceDesc="LeapFrog USB Driver"

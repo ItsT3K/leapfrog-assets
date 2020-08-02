@@ -1,0 +1,219 @@
+t	#VersionNumber
+# This is the User Interface configuration File.
+#Do NOT change anything in this file unless you really know what you are 
+doing.
+#The structure looks like this:
+#[Screen]
+#	(Section x)
+#		Key1=Value1
+#		Key2=Value2
+#		Keyn=Valuen
+#	(Section y)
+#		Number of entrys in this section
+#		Key1=Value1
+#		....
+#[END]
+#
+#!!!!No blank lines are allowed within a [SCREEN] .... [END] block.
+#To format the file for better readability (like this example), tabs
+#and whitespaces are allowed
+#If a string value has whitespaces in it -> use "" quotes
+#
+#The Width and Height parameters are ignored in case ofimages
+# -> Width and Height of the images are used
+#
+#Color Codes: Color codes have to be entered in hex values. Attention!!! 
+color sequence is
+#	BGR !! NOT RGB
+#
+
+[MAIN SCREEN]
+	(WINDOW)
+		Height=330
+		Width=500
+		Title="Leap Frog"
+	(BACKGROUND IMAGE)
+		FileName=bg_tunnel.gif
+		Height=330
+		Width=500
+		BkgdColor=339933
+	(LOGO)
+		FileName=logo_mindstation.gif
+		VertPos=3
+		HoriPos=4
+	(IMAGE AREA 1)
+		FileNameActive=image1Active.gif
+		FileNameComplete=image1Complete.gif
+		FileNameDim=image1Dim.gif
+		Height=149
+		Width=106
+		VertPos=13
+		HoriPos=173
+		OnConnectDown=1
+		OnCheckDown=1
+		OnUpgradeDown=2
+		OnUploadDown=2
+		OnEraseDown=2
+		OnDownloadDown=2
+		OnCloseDown=2
+		OnConnectUp=1
+		OnCheckUp=1
+		OnUpgradeUp=2
+		OnUploadUp=2
+		OnEraseUp=2
+		OnCloseUp=2
+		OnConnectMaint=1
+		OnCheckMaint=2
+		OnCloseMaint=2
+	(IMAGE AREA 2)
+		FileNameActive=image2Active.gif
+		FileNameComplete=image2Complete.gif
+		FileNameDim=image2Dim.gif
+		Height=149
+		Width=106
+		VertPos=13
+		HoriPos=279
+		OnConnectDown=0
+		OnCheckDown=0
+		OnUpgradeDown=1
+		OnUploadDown=1
+		OnEraseDown=1
+		OnDownloadDown=2
+		OnCloseDown=2
+		OnConnectUp=0
+		OnCheckUp=0
+		OnUpgradeUp=1
+		OnUploadUp=1
+		OnEraseUp=1
+		OnCloseUp=2
+		OnConnectMaint=0
+		OnCheckMaint=1
+		OnCloseMaint=2
+	(IMAGE AREA 3)
+		FileNameActive=image3Active.gif
+		FileNameComplete=image3Complete.gif
+		FileNameDim=image3Dim.gif
+		Height=149
+		Width=106
+		VertPos=13
+		HoriPos=384
+		OnConnectDown=0
+		OnCheckDown=0
+		OnUpgradeDown=0
+		OnUploadDown=0
+		OnEraseDown=0
+		OnDownloadDown=1
+		OnCloseDown=2
+		OnConnectUp=0
+		OnCheckUp=0
+		OnUpgradeUp=0
+		OnUploadUp=0
+		OnEraseUp=0
+		OnCloseUp=2
+		OnConnectMaint=0
+		OnCheckMaint=0
+		OnCloseMaint=2
+	(TEXTMESSAGE)
+		Font=Verdana
+		Color=FFFFFF
+		Size=14
+		Height=16
+		Width=270
+		VertPos=201
+		HoriPos=115
+		Align=LEFT
+	(PROGRESS BAR)
+		FileNameDim=barDim.gif
+		WidthDim=230
+		HeightDim=15
+		VertPosDim=227
+		HoriPosDim=115
+		FileNameBkGrd=barBack.gif
+		WidthBkGrd=230
+		HeightBkGrd=14
+		VertPosBkGrd=227
+		HoriPosBkGrd=115
+		FileNameFGrd=barOver.gif
+		WidthFGrd=227
+		HeightFGrd=13
+		VertPosFGrd=228
+		HoriPosFullFGrd=116
+		HoriPosNullFGrd=-112
+		WidthClip=227
+		HeightClip=13
+		VertPosClip=228
+		HoriPosClip=116
+		OnConnect=0
+		OnCheck=0
+		OnUpgrade=1
+		OnUpload=1
+		OnErase=1
+		OnDownload=1
+		OnClose=0
+	(TIME)
+		Height=14
+		Width=270
+		VertPos=245
+		HoriPos=115
+	(LOCAL MESSAGES)
+		CheckClear="Check if Cartridge is clear"
+		CheckClearACK="Cartridge is clear"
+		CheckClearNACK="Cartridge is not clear"
+		DownloadFile="Transferring Next Portion  ..."
+		DownloadFileACK="Download Continuing ..."
+		DownloadFileNACK="Download failed"
+		UploadFile="Uploading File from Mind Station"
+		UploadFileACK="Upload completed successfully"
+		UploadFileNACK="Upload failed"
+		Connect="Establishing connection to Mind Station"
+		ConnectACK="Connetion to Mind Station established"
+		ConnectNACK="Connetion to Mind Station not established"
+		ShutDown="Shutting down Mind Station and Application"
+		ShutDownACK="Mind Station Device down"
+		ShutDownNACK="Mind Station Device not down"
+		EraseCartridge="Erasing Cartridge"
+		EraseCartridgeACK="Cartridge erased"
+		EraseCartridgeNACK="Cartridge not erased"
+		UploadStatus="Uploading Status"
+		UploadStatusACK="Uploading Status complete"
+		UploadStatusNACK="Error uploading Status"
+		DiskOperation="Disk Operation"
+		DiskOperationACK="Disk Operation complete"
+		DiskOperationNACK="Error Disk Operation"
+		GotoWebSite="Go to Website"
+		GotoWebSiteACK=" "
+		GotoWebSiteNACK=" "
+	(CANCEL)
+		FileNameRest=closeRest.gif
+		FileNameMoOver=closeRest.gif
+		FileNameMoDown=closeRest.gif
+		Height=21
+		Width=121
+		VertPos=270
+		HoriPos=115
+[END]
+
+[HELP SCREEN]
+	(WINDOW)
+		Height=330
+		Width=500
+		Title="Leap Frog"
+	(BACKGROUND IMAGE)
+		FileName=bg_tunnel.gif
+		Height=330
+		Width=500
+		BkgdColor=339933
+	(IMAGE)
+		FileName=logo_mindstation.gif
+		VertPos=3
+		HoriPos=3
+	(TEXTMESSAGE)
+		Font=Arial
+		Color=FFFFFF
+		Size=16
+		Height=200
+		Width=350
+		VertPos=50
+		HoriPos=70
+		Align=LEFT
+[END]

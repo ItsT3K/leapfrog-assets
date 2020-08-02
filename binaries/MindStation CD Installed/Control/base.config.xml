@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configuration version="0.3">
+	<nvPair><flash-ids>control\Flash-ID.lcf</flash-ids></nvPair>
+	<nvPair><flash-commands>control\Flash-Commands.lcf</flash-commands></nvPair>
+	<nvPair><errors-file>control\errors.xml</errors-file></nvPair>
+
+	<nvPair><diag-final-write>control\Welcome3.lbk</diag-final-write></nvPair>
+	<nvPair><successful-download-url-key>mydc_confirm</successful-download-url-key></nvPair>
+	<nvPair><successful-upload-url-key>myas_prescrip</successful-upload-url-key></nvPair>
+	<!-- warning cr's are important in text strings here -->
+	<nvPair><error_dialog_preamble>Please try the following possible solutions:
+			
+</error_dialog_preamble></nvPair>
+<nvPair><error_dialog_postscript>
+
+Click the 'HELP' button for further suggestions OR go to LeapFrog Customer Service: http://leapfrog.custhelp.com</error_dialog_postscript></nvPair>
+	<nvPair><inet-connection-local404>control\local404.htm</inet-connection-local404></nvPair>
+
+	<nvPair><cache-location>cache</cache-location></nvPair>
+
+	<nvPair><acp-timeout>120</acp-timeout></nvPair>
+	<nvPair><acp-diag-timeout>20</acp-diag-timeout></nvPair>
+	<nvPair><acp-diag-connection>acp1.leapfrog.com:5551</acp-diag-connection></nvPair>
+		
+	<nvPair><main_window_title>Mind Station</main_window_title></nvPair>
+
+	<nvPair><time_remaining>TIME REMAINING:</time_remaining></nvPair>
+	<nvPair><time_hrs>HRS</time_hrs></nvPair>
+	<nvPair><time_mins>MINS</time_mins></nvPair>
+	<nvPair><time_secs>SECS</time_secs></nvPair>
+	<nvPair><time_hr>HR</time_hr></nvPair>
+	<nvPair><time_min>MIN</time_min></nvPair>
+	<nvPair><time_sec>SEC</time_sec></nvPair>
+
+	<nvPair><desktop_icon_name>Resume Download</desktop_icon_name></nvPair>
+	
+	<nvPair><progress-text-linker>Establishing connection to Mind Station</progress-text-linker></nvPair>
+	<nvPair><progress-text-linker-ready>Connetion to Mind Station established</progress-text-linker-ready></nvPair>
+	<nvPair><progress-text-reading>Uploading Status</progress-text-reading></nvPair>
+	<nvPair><progress-text-writing>Writing Cartridge</progress-text-writing></nvPair>
+	<nvPair><progress-text-erase>Erasing Cartridge</progress-text-erase></nvPair>
+	<nvPair><progress-text-erase-done>Erase Complete</progress-text-erase-done></nvPair>
+	<nvPair><progress-text-statuscheck>Checking Cartridge</progress-text-statuscheck></nvPair>
+	<nvPair><progress-text-complete>Completed</progress-text-complete></nvPair>
+	<nvPair><progress-text-savecart>Saving Cartridge</progress-text-savecart></nvPair>
+	<nvPair><progress-text-verify>Verifying Cartridge</progress-text-verify></nvPair>
+	<nvPair><progress-text-verify-ack>Verifying Passed</progress-text-verify-ack></nvPair>
+	<nvPair><progress-text-verify-nack>Verifying Failed</progress-text-verify-nack></nvPair>
+	<nvPair><progress-text-converting>Converting File</progress-text-converting></nvPair>
+	<nvPair><progress-text-error>Failed</progress-text-error></nvPair>
+	<nvPair><progress-text-quit>Shutting down</progress-text-quit></nvPair>
+	<nvPair><progress-text-default-write>Downloading...</progress-text-default-write></nvPair>
+	<nvPair><progress-text-default-read>Uploading...</progress-text-default-read></nvPair>
+	
+	<nvPair><confirm_dlg_title>Please Confirm?</confirm_dlg_title></nvPair>
+	<!-- various confirm buttons - confirm on right - cancel on left
+	CONFIRM_NONE = -1,
+	CONFIRM_RETRY = 0, 
+	CONFIRM_LAUNCH = 1,
+	CONFIRM_UPGRADE = 2,
+	CONFIRM_OK = 3
+
+	CANCEL_NONE = -1,
+	CANCEL_CANCEL = 0,
+	CANCEL_NO = 1,
+	CANCEL_EXIT = 2
+	-->
+
+<!-- ****** SUCCESS Dialogs ****** -->
+	<!-- installation (first time) success -->
+	<nvPair><success-dlg-install-enable>1</success-dlg-install-enable></nvPair>
+	<nvPair><success-dlg-install-title>Congratulations!</success-dlg-install-title></nvPair>
+	<nvPair><success-dlg-install-text>Installation Successful
+Please check that you are connected to the Internet.
+Return to this screen and click 'Launch' below to begin downloading activities.</success-dlg-install-text></nvPair>
+	<nvPair><success-dlg-install-cancel-button>0</success-dlg-install-cancel-button></nvPair>
+	<nvPair><success-dlg-install-confirm-button>1</success-dlg-install-confirm-button></nvPair>
+	<nvPair><success-dlg-install-url>http://www.leapfrog.com/help/hprn_popup.jhtml?os=%osname%&amp;msvers=%msversion%&amp;linkId=%linkerid%&amp;installFlag=1</success-dlg-install-url></nvPair>
+
+	<!-- diagnostic (subsequent) success -->
+	<nvPair><success-dlg-diag-enable>1</success-dlg-diag-enable></nvPair>
+	<nvPair><success-dlg-diag-title>Congratulations!</success-dlg-diag-title></nvPair>
+	<nvPair><success-dlg-diag-text>Mind Station Test Successful.
+Please check that you are connected to the Internet. 
+Return to this screen and click 'Launch' below to download activities.</success-dlg-diag-text></nvPair>
+	<nvPair><success-dlg-diag-cancel-button>0</success-dlg-diag-cancel-button></nvPair>
+	<nvPair><success-dlg-diag-confirm-button>1</success-dlg-diag-confirm-button></nvPair>
+	<nvPair><success-dlg-diag-url>http://www.leapfrog.com/help/hprn_popup.jhtml?os=%osname%&amp;msvers=%msversion%&amp;linkId=%linkerid%&amp;installFlag=3</success-dlg-diag-url></nvPair>
+
+	<!-- download success -->
+	<nvPair><success-dlg-download-enable>1</success-dlg-download-enable></nvPair>
+	<nvPair><success-dlg-download-title>Download Complete</success-dlg-download-title></nvPair>
+	<nvPair><success-dlg-download-text>Download Complete 
+You may now remove your cartridge from your Mind Station and place in your toy to begin your activities.
+click 'OK' below to return to LeapFrog.com.</success-dlg-download-text></nvPair>
+	<nvPair><success-dlg-download-cancel-button>0</success-dlg-download-cancel-button></nvPair>
+	<nvPair><success-dlg-download-confirm-button>3</success-dlg-download-confirm-button></nvPair>
+	<nvPair><success-dlg-download-url></success-dlg-download-url></nvPair>
+
+	<!-- upload success -->
+	<nvPair><success-dlg-upload-enable>1</success-dlg-upload-enable></nvPair>
+	<nvPair><success-dlg-upload-title>Upload Complete</success-dlg-upload-title></nvPair>
+	<nvPair><success-dlg-upload-text>Upload Complete
+The activity pack has been successfully uploaded from your cartridge.
+Click 'OK' to view your progress report.</success-dlg-upload-text></nvPair>
+	<nvPair><success-dlg-upload-cancel-button>0</success-dlg-upload-cancel-button></nvPair>
+	<nvPair><success-dlg-upload-confirm-button>3</success-dlg-upload-confirm-button></nvPair>
+	<nvPair><success-dlg-upload-url></success-dlg-upload-url></nvPair>
+
+<!-- ****** CONFIRM dialog text/config ****** -->
+	<nvPair><confirm-dlg-erase-title>Cartridge overwrite warning</confirm-dlg-erase-title></nvPair>
+	<nvPair><confirm-dlg-erase-text>There is an activity pack on this cartridge:
+
+Downloading will overwrite the existing data on your cartridge, do you want to proceed?  You can always access 'Past Activity Packs' from My LeapFrog.</confirm-dlg-erase-text></nvPair>
+	<nvPair><confirm-dlg-erase-cancel-button>0</confirm-dlg-erase-cancel-button></nvPair>
+	<nvPair><confirm-dlg-erase-confirm-button>3</confirm-dlg-erase-confirm-button></nvPair>
+
+	<nvPair><confirm-dlg-recommend-title>Mind Station upgrade available</confirm-dlg-recommend-title></nvPair>
+	<nvPair><confirm-dlg-recommend-text>Mind Station upgrade available:
+
+You are using an older version of the Mind Station software.  For enhanced Mind Station performance, we recommend the newest version available.  Click below if you would like to upgrade now.</confirm-dlg-recommend-text></nvPair>
+	<nvPair><confirm-dlg-recommend-cancel-button>0</confirm-dlg-recommend-cancel-button></nvPair>
+	<nvPair><confirm-dlg-recommend-confirm-button>2</confirm-dlg-recommend-confirm-button></nvPair>
+
+	<nvPair><confirm-dlg-upgrade-title>Mind Station upgrade available</confirm-dlg-upgrade-title></nvPair>
+	<nvPair><confirm-dlg-upgrade-text>Mind Station upgrade available:
+
+You are using an older version of the Mind Station software.  For enhanced Mind Station performance, we now require the newest version.  Click below if you would like to upgrade now.
+</confirm-dlg-upgrade-text></nvPair>
+	<nvPair><confirm-dlg-upgrade-cancel-button>0</confirm-dlg-upgrade-cancel-button></nvPair>
+	<nvPair><confirm-dlg-upgrade-confirm-button>2</confirm-dlg-upgrade-confirm-button></nvPair>
+
+	<nvPair><confirm-dlg-mismatch-title>Cartridge upload warning</confirm-dlg-mismatch-title></nvPair>
+	<nvPair><confirm-dlg-mismatch-text>Cartridge Upload Warning:
+This cartridge been uploaded previously by this family member. Click 'OK' below to reassess and generate another progress report.</confirm-dlg-mismatch-text></nvPair>
+	<nvPair><confirm-dlg-mismatch-cancel-button>0</confirm-dlg-mismatch-cancel-button></nvPair>
+	<nvPair><confirm-dlg-mismatch-confirm-button>3</confirm-dlg-mismatch-confirm-button></nvPair>
+
+	<nvPair><confirm-dlg-upload-title>Cartridge Upload Warning</confirm-dlg-upload-title></nvPair>
+	<nvPair><confirm-dlg-upload-text>Cartridge Upload Warning:
+This cartridge been uploaded previously by another family member. Click 'OK' below to reassess and generate a progress report for the current user.</confirm-dlg-upload-text></nvPair>
+	<nvPair><confirm-dlg-upload-cancel-button>0</confirm-dlg-upload-cancel-button></nvPair>
+	<nvPair><confirm-dlg-upload-confirm-button>3</confirm-dlg-upload-confirm-button></nvPair>
+
+</configuration>
